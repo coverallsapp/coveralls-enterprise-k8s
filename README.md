@@ -69,13 +69,27 @@ The chart bundle includes a `README.md` with the full list of required values, s
 - **Helm 3.10+**
 - A **pull token** for the image (issued by Coveralls)
 - A **TLS certificate** for your hostname (or cert-manager)
-- **PostgreSQL 16.x** — a managed database service (RDS, Azure Database for PostgreSQL, Cloud SQL) is strongly recommended for production
+- **PostgreSQL 11.x or newer** (12–16 all supported) — a managed database service (RDS, Azure Database for PostgreSQL, Cloud SQL) is strongly recommended for production
 
 ---
 
 ## Support
 
-Coveralls Enterprise includes a one-command diagnostic bundle that collects pod logs and cluster resource state — **never secret values**. When you open a support request, attach a bundle (instructions are included with the chart).
+Coveralls Enterprise includes a one-command diagnostic bundle that collects pod logs and cluster resource state — **never secret values**. When you open a support request, please attach a bundle.
+
+```bash
+# One-time: install the Troubleshoot.sh CLI
+brew install replicatedhq/replicated/support-bundle
+# (or: kubectl krew install support-bundle)
+
+# Collect a bundle (support-bundle.yaml ships with the chart)
+support-bundle support-bundle.yaml \
+  --namespace coveralls \
+  --output ./coveralls-support-bundle.tar.gz \
+  --interactive=false
+```
+
+This produces a `.tar.gz` of pod logs and cluster resource state — Secret **names only, never values**. Email it to support@coveralls.io or your account contact. The chart's `SUPPORT_BUNDLE.md` documents exactly what is and isn't collected, and how to inspect the bundle before sharing.
 
 - **Support:** support@coveralls.io
 - **Documentation:** https://docs.coveralls.io/enterprise
