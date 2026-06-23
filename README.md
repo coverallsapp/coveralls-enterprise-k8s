@@ -69,7 +69,7 @@ The chart bundle includes a `README.md` with the full list of required values, s
 - **Helm 3.10+**
 - A **pull token** for the image (issued by Coveralls)
 - A **TLS certificate** for your hostname (or cert-manager)
-- **PostgreSQL 11.x or newer** (12–16 all supported) — a managed database service (RDS, Azure Database for PostgreSQL, Cloud SQL) is strongly recommended for production
+- **PostgreSQL 16.x recommended** (15.x and 16.x validated) — a managed database service (RDS, Azure Database for PostgreSQL, Cloud SQL) is strongly recommended for production
 
 ---
 
