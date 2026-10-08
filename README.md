@@ -4,7 +4,7 @@ Self-hosted code coverage tracking for your organization, deployed on Kubernetes
 
 This repository is the home for the **Kubernetes install path** for Coveralls Enterprise — install documentation and operational guidance for running Coveralls Enterprise on a Kubernetes cluster you operate.
 
-> **Access:** This repo is documentation only. The Coveralls Enterprise container image and Helm chart are distributed privately. If you've reached this page, your organization probably has an active Coveralls Enterprise agreement. You will be issued a pull token for both CHCR.io resources before your install date. Reach out to your Coveralls representative for any questions.
+> **Access:** If you've reached this page, your organization probably has an active Coveralls Enterprise agreement. This repo is documentation-only. The Coveralls Enterprise container image and Helm chart are distributed privately. You will be issued a pull token for both CHCR.io resources before your install date. Reach out to your Coveralls representative for any questions.
 
 ---
 
