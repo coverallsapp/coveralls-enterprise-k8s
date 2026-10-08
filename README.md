@@ -1,4 +1,4 @@
-# Coveralls Enterprise — Kubernetes Install Path
+# Coveralls Enterprise On-Prem — Kubernetes Install Path
 
 Self-hosted code coverage tracking for your organization, deployed on Kubernetes with a Helm chart.
 
